@@ -17,11 +17,11 @@ public class Exercice14 {
             System.out.println("Order is: " + x + ", " + y + " and " + z );
         } else if (x <= z && z <= y) {
             System.out.println("Order is: " + x + ", " + z + " and " + y);
-        } else if (y <= z && z <= x){
-            System.out.println("Order is: " + y + ", " + z + " and " + x );
         } else if (y <= x && x <= z) {
             System.out.println("Order is: " + y + ", " + x + " and " + z );
-        } else if (z <= x && x <= y) {
+        } else if (y <= z){
+            System.out.println("Order is: " + y + ", " + z + " and " + x );
+        } else if (x <= y) {
             System.out.println("Order is: " + z + ", " + x + " and " + y );
         } else {
             System.out.println("Order is: " + z + ", " + y + " and " + x );
