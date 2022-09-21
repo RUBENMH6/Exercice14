@@ -13,27 +13,18 @@ public class Exercice14 {
         System.out.println("Enter a last number");
         z = input.nextInt();
 
-        if (x>=y && x>=z) {
-            if (y>=z) {
-                System.out.println("Order is: " + x + ", " + y + " and " + z );
-            } else {
-                System.out.println("Order is: " + x + ", " + z + " and " + y );
-            }
+        if (x <= y && y <= z) {
+            System.out.println("Order is: " + x + ", " + y + " and " + z );
+        } else if (x <= z && z <= y) {
+            System.out.println("Order is: " + x + ", " + z + " and " + y);
+        } else if (y <= z && z <= x){
+            System.out.println("Order is: " + y + ", " + z + " and " + x );
+        } else if (y <= x && x <= z) {
+            System.out.println("Order is: " + y + ", " + x + " and " + z );
+        } else if (z <= x && x <= y) {
+            System.out.println("Order is: " + z + ", " + x + " and " + y );
+        } else {
+            System.out.println("Order is: " + z + ", " + y + " and " + x );
         }
-        if (y>=x && y>=z) {
-            if (x>=z) {
-                System.out.println("Order is: " + y + ", " + x + " and " + z);
-            } else {
-                System.out.println("Order is: " + y + ", " + z + " and " + x );
-            }
-        }
-        if (z>=x && z>=y) {
-            if (x>=y) {
-                System.out.println("Order is: " + z + ", " + x + " and " + y );
-            } else {
-                System.out.println("Order is: " + z + ", " + y + " and " + x );
-            }
-        }
-
     }
 }
